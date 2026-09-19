@@ -10,16 +10,16 @@
     table {
     background-color: #99ccff;
     width: 650px;
-    padding: 5px 35px;
+    padding: 0px 25px 0px;
     }   
     input[type="radio"] {
     accent-color: #008000;
     }
     hr {
     border: none;
-    border-top: 2px solid #000000;
-    margin: 3px auto;
-    width: 89%;
+    border-top: 1.9px solid #000000;
+    margin: 12px auto;
+    width: 92%;
     }
     .logo-box {
       width: 320px;
@@ -29,8 +29,9 @@
       box-shadow: 8px 8px 0px #6080a0;  
       font-family: "Times New Roman", serif;
       font-weight: bold;
-      font-size: 38px;
-      text-align: center;        
+      font-size: 34px;
+      text-align: center;   
+          
     }
 
     .logo-text-top {
@@ -38,7 +39,7 @@
     }
 
     .logo-text-bottom {
-        border-top: 4px solid #000000;
+        border-top: 6px solid #000000;
         padding: 0px 0;
     }
     </style>
@@ -58,7 +59,7 @@
     <div>
     <tr>
         <td align center>
-            <h2 align="center" style="margin: 5 0 0 0;">Registration Form</h2>
+            <h2 align="center" style="margin: 5">Registration Form</h2>
             <p align="center" style="margin: 0">Register your Jackson Electronics product here</p>
         </td>
     </tr>
@@ -108,71 +109,66 @@
             </form>
         </div>
             <hr>
-
             <div>
-            <form>
-                <table cellspacing="0" cellpadding="3">
-                <tr>
-                <td width="35%">
-                    <label for="products">Products</label>
-                </td>
-                <td width="100px">
-                    <select id="products" name="products" style="width:120px">
-                    <option value="ScanMaster">ScanMaster</option>
-                    </select>
-
-                </td>
-                </tr>
-            </div>
-            <div>
-                <tr>
-                    <td>Date Purchased</td>
+              <form>
+                <table cellspacing="0" cellpadding="3" width="100%">
+                  <tr>
+                    <td width="203"><label for="products">Products</label></td>
                     <td>
-                        <input type="text" name="date" style="width:140px">
+                      <select id="products" name="products" style="width:120px">
+                        <option value="ScanMaster">ScanMaster</option>
+                      </select>
                     </td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
+                    <td>Date Purchased</td>
+                    <td><input type="text" name="date" style="width:140px"></td>
+                  </tr>
+                  <tr>
                     <td>Serial #</td>
                     <td><input type="text" name="serial" style="width:140px"></td>
-                </tr>
+                  </tr>
+                  <tr>
+                    <td valign="top">Used for:</td>
+                    <td>
+                      <div style="display: flex; gap: 20px;">
+                        <div style="width: 125px;">
+                          <div><input type="radio" name="for">Home</div>
+                          <div><input type="radio" name="for">Business</div>
+                          <div><input type="radio" name="for">Government</div>
+                        </div>
+                        <div>
+                          <div><input type="radio" name="for">Education Institution</div>
+                          <div><input type="radio" name="for">Other</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">System (check all that apply)</td>
+                    <td>
+                      <div style="display: flex; gap: 20px;">
+                        <div style="width: 125px;">
+                          <div><input type="checkbox">Windows</div>
+                          <div><input type="checkbox">Macintosh</div>
+                        </div>
+                        <div>
+                          <div><input type="checkbox">UNIX</div>
+                          <div><input type="checkbox">Other</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </form>
             </div>
-            <div>
-                <tr>
-                    <td>Used for:</td>
-                    <td><input type="radio" name="for">Home</td>
-                    <td><input type="radio" name="for">Education Institution</td>
-                </tr>
-                <tr>
-                    <td>
-                    <td><input type="radio" name="for">Business</td>
-                    <td><input type="radio" name="for">Other</td>
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                    <td><input type="radio" name="for">Government</td>
-                </td>
-                </tr>
-                <tr>
-                    <td>System (check all that apply)</td>
-                    <td><input type="checkbox">Windows</td>
-                    <td><input type="checkbox">UNIX</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox">Macintosh</td>
-                    <td><input type="checkbox">Other</td>
-                </tr>
-            </table>
-            </form>
-        </div>
             <hr>
             <div>
             <form>
             <table width="100%" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="215px" valign="top">&nbsp;Comments?:</td>
-                    <td><textarea style="width: 98%; height: 100px;"></textarea></td>
+                    <td width="210px" valign="top">&nbsp;Comments?:</td>
+                    <td><textarea style="width: 98%; height: 100px; resize: none;"></textarea></textarea></td>
                 </tr>
                     <tr>
                     <td colspan="2" align="center">
